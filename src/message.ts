@@ -85,6 +85,7 @@ export default class Message {
 
 		return await this.ai.post({
 			replyId: this.note.id,
+			visibility: "home",
 			text: text,
 			fileIds: opts?.file ? [opts?.file.id] : undefined,
 			cw: opts?.cw,
